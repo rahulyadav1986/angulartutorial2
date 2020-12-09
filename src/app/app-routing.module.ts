@@ -159,15 +159,14 @@ const routes: Routes = [
     path: 'product-status',
     loadChildren: () => import('./all-pages/product-status/product-status.module').then( m => m.ProductStatusPageModule)
   },
-  
- 
- 
- 
-  
-  
-  
-  
-  
+  {
+    path: 'item-price-info',
+    loadChildren: () => import('./all-pages/item-price-info/item-price-info.module').then( m => m.ItemPriceInfoPageModule)
+  },
+  {
+    path: 'order-price-info',
+    loadChildren: () => import('./all-pages/order-price-info/order-price-info.module').then( m => m.OrderPriceInfoPageModule)
+  },
 ];
 
 @NgModule({

@@ -800,3 +800,8 @@ ion-header{
         }
     }
 }
+
+.my-custom-class{
+    --height: 60%;
+    align-items: flex-end !important;
+}

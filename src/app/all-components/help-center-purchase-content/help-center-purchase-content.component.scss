@@ -143,7 +143,7 @@
         width: 100%; float: left; background-color: #fff;
     }
     .payment_list_bar{
-        width: 100%; position: relative; height: auto; float: left;  color: rgba(68,68,68,.8); font-size: 21px; border-top: #f0eff4 1px solid; padding: 26px 45px 26px 45px; font-weight: 500; text-transform: normal;
+        width: 100%; position: relative; height: auto; float: left;  color: rgba(68,68,68,.8); font-size: 21px; border-top: #f0eff4 1px solid; padding: 26px 45px 26px 45px; outline-style: none; font-weight: 500; text-transform: normal;
         &.first{
             font-weight: 700; color: rgba(0,0,0,.89); text-transform: uppercase;
         }
