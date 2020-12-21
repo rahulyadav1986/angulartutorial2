@@ -167,6 +167,11 @@ const routes: Routes = [
     path: 'order-price-info',
     loadChildren: () => import('./all-pages/order-price-info/order-price-info.module').then( m => m.OrderPriceInfoPageModule)
   },
+  {
+    path: 'your-finance',
+    loadChildren: () => import('./all-pages/your-finance/your-finance.module').then( m => m.YourFinancePageModule)
+  },
+  
 ];
 
 @NgModule({

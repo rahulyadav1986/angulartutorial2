@@ -110,13 +110,14 @@
         
     }
  }
-
  @media only screen and (max-width:411px){
     .main_details{ 
-        
-        h2{
-            right: -79px; font-size: 27px;
+        .details{
+            h2{
+                right: -201px !important; font-size: 27px;
+            }
         }
+        
         
     }
   

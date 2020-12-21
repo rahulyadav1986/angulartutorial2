@@ -1,4 +1,6 @@
+import { FilterComponent } from './filter/filter.component';
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-top-details',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController) { }
+
+  async filter() {
+    const modal = await this.modalController.create({
+      component: FilterComponent,
+      cssClass: 'filter-class'
+    });
+    return await modal.present();
+  }
 
   ngOnInit() {}
 

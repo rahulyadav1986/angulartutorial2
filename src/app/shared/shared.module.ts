@@ -23,9 +23,9 @@ import { LatestCheckoutComponent } from '../all-components/home-page-contents/la
 import { LatestItemComponent } from '../all-components/home-page-contents/latest-checkout/latest-item/latest-item.component';
 import { CategoriesContentsComponent } from '../all-components/categories-contents/categories-contents.component';
 import { SubCategoryContentsComponent } from '../all-components/sub-category-contents/sub-category-contents.component';
-import { ShopContentsComponent } from '../all-components/shop-contents/shop-contents.component';
+/*import { ShopContentsComponent } from '../all-components/shop-contents/shop-contents.component';
 import { TopDetailsComponent } from '../all-components/shop-contents/top-details/top-details.component';
-import { ProductItemsComponent } from '../all-components/shop-contents/product-items/product-items.component';
+import { ProductItemsComponent } from '../all-components/shop-contents/product-items/product-items.component';*/
 import { OdersSearchComponent } from '../all-components/your-orders-content/oders-search/oders-search.component';
 import { BannerTopCarouselComponent } from '../all-components/home-page-contents/banner-top-carousel/banner-top-carousel.component';
 
@@ -58,9 +58,9 @@ import { BannerTopCarouselComponent } from '../all-components/home-page-contents
     BestDealsComponent,
     CategoriesContentsComponent,
     SubCategoryContentsComponent,
-    ShopContentsComponent,
+    /*ShopContentsComponent,
     TopDetailsComponent,
-    ProductItemsComponent,
+    ProductItemsComponent,*/
     OdersSearchComponent
     
   ],
@@ -92,9 +92,9 @@ import { BannerTopCarouselComponent } from '../all-components/home-page-contents
     BestDealsComponent,
     CategoriesContentsComponent,
     SubCategoryContentsComponent,
-    ShopContentsComponent,
+    /*ShopContentsComponent,
     TopDetailsComponent,
-    ProductItemsComponent,
+    ProductItemsComponent,*/
     OdersSearchComponent
   ]
 })
