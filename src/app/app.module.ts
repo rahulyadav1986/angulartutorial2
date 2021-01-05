@@ -18,7 +18,7 @@ import { MainMenuComponent } from './all-components/header/main-menu/main-menu.c
 @NgModule({
   declarations: [AppComponent, FooterComponent, HeaderComponent, MenuComponent, MenuSocialComponent, ProfileContentComponent, MainMenuComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [AppRoutingModule, BrowserModule, IonicModule.forRoot()],
   providers: [
     StatusBar,
     SplashScreen,

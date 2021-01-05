@@ -2,7 +2,7 @@
   <h2>- Similar Products -</h2>
   <ion-slides pager="false" [options]="slideOpts">
     <ion-slide>
-      <ion-card>
+      <ion-card [routerLink]="['/shop']">
         <div class="image_back">
           <img src="assets/images/pro1.jpg" alt="">
           <div class="button_cover" [class.activelike]="activelike" (click)="active()">
@@ -42,7 +42,7 @@
       </ion-card>
     </ion-slide>
     <ion-slide>
-      <ion-card>
+      <ion-card [routerLink]="['/shop']">
         <div class="image_back">
           <img src="assets/images/pro2.jpg" alt="">
           <div class="button_cover" [class.activelike]="activelike" (click)="active()">
@@ -82,7 +82,7 @@
       </ion-card>
     </ion-slide>
     <ion-slide>
-      <ion-card>
+      <ion-card [routerLink]="['/shop']">
         <div class="image_back">
           <img src="assets/images/pro2.jpg" alt="">
           <div class="button_cover" [class.activelike]="activelike" (click)="active()">
@@ -122,7 +122,7 @@
       </ion-card>
     </ion-slide>
     <ion-slide>
-      <ion-card>
+      <ion-card [routerLink]="['/shop']">
         <div class="image_back">
           <img src="assets/images/pro3.jpg" alt="">
           <div class="button_cover" [class.activelike]="activelike" (click)="active()">

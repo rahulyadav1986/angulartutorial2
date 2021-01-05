@@ -8,6 +8,7 @@ import { YourOrdersPageRoutingModule } from './your-orders-routing.module';
 
 import { YourOrdersPage } from './your-orders.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { OdersSearchComponent } from 'src/app/all-components/your-orders-content/oders-search/oders-search.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
     YourOrdersPageRoutingModule,
     SharedModule
   ],
-  declarations: [YourOrdersPage, ]
+  declarations: [YourOrdersPage, OdersSearchComponent]
 })
 export class YourOrdersPageModule {}

@@ -171,6 +171,10 @@ const routes: Routes = [
     path: 'your-finance',
     loadChildren: () => import('./all-pages/your-finance/your-finance.module').then( m => m.YourFinancePageModule)
   },
+  {
+    path: 'search',
+    loadChildren: () => import('./all-pages/search/search.module').then( m => m.SearchPageModule)
+  },
   
 ];
 

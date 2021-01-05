@@ -314,7 +314,7 @@ ion-header.account.address{
                 .right_icon_details{ 
                     li{
                         img{
-                            height: 21px;
+                            height: 17px;
                         }
                     }
                 }
@@ -808,4 +808,8 @@ ion-header{
 
 .range-pin{
     background-color:  #000;
+}
+
+.ion-color.sc-ion-searchbar-md-h .searchbar-input.sc-ion-searchbar-md{
+    border-radius: 100px !important; background-color: #0b56da
 }

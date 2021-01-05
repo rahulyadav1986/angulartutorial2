@@ -55,7 +55,7 @@
               </ion-button>
             </ion-col>
             <ion-col size="7">
-              <ion-button expand="block" fill="clear" shape="round" color="custom">
+              <ion-button [routerLink]="['/wishlist']" expand="block" fill="clear" shape="round" color="custom">
                 Move to wishlist
               </ion-button>
             </ion-col>
@@ -63,7 +63,7 @@
         </ion-grid>
       </div>
     </div>
-    <div class="handling_fee_bar wishlist">
+    <div class="handling_fee_bar wishlist" [routerLink]="['/wishlist']">
       <ion-icon slot="first" name="bookmark-outline" class="bookmark"></ion-icon>
       Add More From Wishlist
       <ion-icon slot="end" name="chevron-forward-outline" class="arrow"></ion-icon>
@@ -72,7 +72,7 @@
       <h2>You may also like:</h2>
       <ion-slides pager="false" [options]="slideOpts">
         <ion-slide>
-          <ion-card>
+          <ion-card [routerLink]="['/shop']">
             <div class="image_back">
               <img src="assets/images/w-p1.jpg" alt="">
             </div>
@@ -98,7 +98,7 @@
           </ion-card>
         </ion-slide>
         <ion-slide>
-          <ion-card>
+          <ion-card [routerLink]="['/shop']">
             <div class="image_back">
               <img src="assets/images/w-p1.jpg" alt="">
               
@@ -126,7 +126,7 @@
           </ion-card>
         </ion-slide>
         <ion-slide>
-          <ion-card>
+          <ion-card [routerLink]="['/shop']">
             <div class="image_back">
               <img src="assets/images/w-p1.jpg" alt="">
               
@@ -154,7 +154,7 @@
           </ion-card>
         </ion-slide>
         <ion-slide>
-          <ion-card>
+          <ion-card [routerLink]="['/shop']">
             <div class="image_back">
               <img src="assets/images/w-p1.jpg" alt="">
             </div>

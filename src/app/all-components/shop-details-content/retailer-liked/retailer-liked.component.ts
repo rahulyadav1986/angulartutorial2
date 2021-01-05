@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RetailerLikedComponent implements OnInit {
 
+  activelike: boolean = false;
   constructor() { }
-  
+
   slideOpts = {
     initialSlide: 0,
     autoplay:true,
@@ -20,6 +21,9 @@ export class RetailerLikedComponent implements OnInit {
     spaceBetween: 15
   };
 
-  ngOnInit() {}
+  ngOnInit() { }
+  active(){
+    this.activelike = !this.activelike;
+  }
 
 }

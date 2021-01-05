@@ -6,7 +6,7 @@
       </ion-buttons>
       <ion-buttons slot="end">
         <ul class="right_icon_details">
-          <li><img src="assets/images/search.png" alt=""></li>
+          <li (click)="searchModel()"><img src="assets/images/search.png" alt=""></li>
           <li><img src="assets/images/heart.png" alt=""></li>
           <li>
             <img src="assets/images/bag.png" alt="">
@@ -20,7 +20,7 @@
 
 <div class="shop_details_content">
   <div class="heron_section">
-    <ion-slides pager="true" [options]="slideOpts">
+    <ion-slides pager="true" #slides>
       <ion-slide>
         <img src="assets/images/pro_del.jpg" alt="">
       </ion-slide>
@@ -60,23 +60,24 @@
       </ion-card-header>
       <ion-card-content>
         <ul class="choose_color">
-          <li><span class="color"
+          <li (click)="next1(slides)"><span class="color"
               style="background-color: #ea6e23; box-shadow: rgba(273, 111, 34, .4) 15px 0 20px;"></span><b>RED</b></li>
-          <li><span class="color"
+          <li (click)="next2(slides)"><span class="color"
               style="background-color: #a9c4e1; box-shadow: rgba(169, 196, 225, .4) 15px 0 20px;"></span><b>Yellow</b>
           </li>
-          <li><span class="color"
+          <li (click)="next3(slides)"><span class="color"
               style="background-color: #3a9c3a; box-shadow: rgba(58, 156, 58, .4) 15px 0 20px;"></span><b>Green</b></li>
-          <li><span class="color"
+          <li (click)="next4(slides)"><span class="color"
               style="background-color: #3f8bd5; box-shadow: rgba(63, 139, 213, .4) 15px 0 20px;"></span><b>Cyan</b></li>
         </ul>
         <ul class="quantity_box">
           <li>Quantity</li>
           <li>
             <div class="wrap">
-              <ion-icon name="chevron-down-outline" class="decrement"></ion-icon>
-              <ion-input type="text"></ion-input>
-              <ion-icon name="chevron-up-outline" class="increment"></ion-icon>
+              <ion-icon name="chevron-down-outline" class="decrement" (click)="decrementQty()"></ion-icon>
+              <!--<ion-input type="number"></ion-input>-->
+              <div class="qty">{{qty}}</div>
+              <ion-icon name="chevron-up-outline" class="increment" (click)="incrementQty()"></ion-icon>
             </div>
           </li>
         </ul>

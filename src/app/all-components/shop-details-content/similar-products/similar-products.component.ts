@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./similar-products.component.scss'],
 })
 export class SimilarProductsComponent implements OnInit {
-
+  activelike: boolean = false;
   constructor() { }
 
   slideOpts = {
@@ -20,6 +20,10 @@ export class SimilarProductsComponent implements OnInit {
     spaceBetween: 15
   };
 
-  ngOnInit() {}
+  ngOnInit() { }
+  active(){
+    this.activelike = !this.activelike;
+  }
+
 
 }

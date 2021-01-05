@@ -9,9 +9,9 @@
       </ion-title>
       <ion-buttons slot="end">
         <ul class="right_icon_details">
-          <li><img src="assets/images/search.png" alt=""></li>
+          <li (click)="searchModel()"><img src="assets/images/search.png" alt=""></li>
           <li><img src="assets/images/heart.png" alt=""></li>
-          <li>
+          <li [routerLink]="['/shop']">
             <img src="assets/images/bag.png" alt="">
             <span>0</span>
           </li>

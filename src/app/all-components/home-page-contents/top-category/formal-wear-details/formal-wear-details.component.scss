@@ -70,7 +70,7 @@
         .details{
             padding-left: 50px;
             h2{
-                right: -122px !important; top: -98px; font-size: 20px !important;     letter-spacing: 6px;
+                right: -40px !important; top: -98px; font-size: 20px !important;     letter-spacing: 6px;
             }
            
             li{
@@ -111,11 +111,11 @@
     }
  }
 
- @media only screen and (max-width:411px){
+ @media only screen and (max-width:414px){
     .main_details{ 
         .details{
             h2{
-                right: -97px !important; font-size: 27px;
+                right: -92px !important; font-size: 27px;
             }
         }
         
@@ -124,11 +124,11 @@
   
  }
 
- @media only screen and (max-width:400px){
+ @media only screen and (max-width:394px){
     .main_details{ 
         .details{
             h2{
-                right: -99px;
+                right: -112px !important;
             }
             
         }
