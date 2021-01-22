@@ -7,8 +7,12 @@
             label{
                 color: #6a6d72; font-size: 14px; text-transform: capitalize; font-weight: normal; margin-bottom: 10px; width: 100%; float: left;
             }
-            input[type="date"]{
-                width: 100%; float: left; background: none; border: none; outline-style: none; text-align: center;
+            input[type="text"]{
+                width: 100%; float: left; background: none; border: none; outline-style: none; text-align: center; font-size: 27px; color: rgba(0,0,0,.9); font-weight: 600;
+                &::placeholder {
+                    color: rgba(0,0,0,.9);
+                    opacity: 1; /* Firefox */
+                  }                  
             }
         }
         .button_back{
@@ -69,20 +73,40 @@
         }
     }
     .head{
-        width: 100%; float: left; margin: 0; padding: 0;
+        width: 100%; float: left; margin: 0; padding: 0; border-bottom: #f0f3f8 12px solid; position: relative; color: rgba(0,0,0,.5);
+        &::after{
+            width: 100%; height: 1px; position: absolute; bottom: -7px; left: 0; content: ""; background-color: #d8dadf;
+        }
+
         li{
-            width: 25%; list-style: none; display: flex; align-items: center; float: left; padding: 20px; word-wrap: break-word; text-align: center;
-            &:first-child{ width: 55%;}
+            width: 25%; list-style: none; align-items: center; float: left; padding: 20px; word-wrap: break-word; text-align: center; position: relative; min-height: 47px; text-align: center;
+            &:after{
+                width: 1px;  height: 19px; background-color: #a3a3a3; position: absolute; top: 0; bottom: 0; right: 4px; content: ""; margin: auto;
+            }
+            &:first-child{
+                width: 55%;  color: rgba(0,0,0,1); font-weight: 600;
+                .head_back{
+                    padding: 0 10px 10px; text-align: center; border-bottom: #0961ff 2px solid; float: left;
+                }
+                &:after{
+                    display: none;
+                }
+            }
             &:nth-child(2){ width: 15%;}
             &:nth-child(3){ width: 15%;}
-            &:last-child{ width: 15%;}
+            &:last-child{
+                width: 15%;
+                &:after{
+                    display: none;
+                }
+            }
         }
     }
     .body{
-        width: 100%; float: left; margin: 0; padding: 0;
+        width: 100%; float: left; margin: 0; padding: 0; position: relative;
         li{
-            width: 25%; list-style: none; display: flex; align-items: center; float: left; padding: 20px; word-wrap: break-word; text-align: left;
-            &:first-child{ width: 55%;}
+            width: 25%; list-style: none;  align-items: center; float: left; padding: 20px; word-wrap: break-word; text-align: left; text-align: center;
+            &:first-child{ width: 55%; text-align: left;}
             &:nth-child(2){ width: 15%;}
             &:nth-child(3){ width: 15%;}
             &:last-child{ width: 15%;}
@@ -96,22 +120,27 @@
                 }
             }
             .bill{
-                color: #f45482; font-weight: 700;
+                color: #f45482; font-weight: 700; padding-top: 24px; float: left;
+                
                 img{
                     height: 12px;
                 }
             }
             .rto{
-                color: #57ba9e; font-weight: 700;
+                color: #57ba9e; font-weight: 700; padding-top: 24px; float: left;
                 img{
                     height: 12px;
                 }
             }
             .pdf{
-                ion-icon{
-                    color: #0b5eff; width: 30px; height: 30px;
+                position: absolute; top: 0; right: 20px; bottom: 0; margin: auto;  width: 30px; height: 30px;
+                img{
+                    height: 30px;
                 }
             }
+        }
+        &:nth-child(2n+2){
+            background-color: #f0f3f8;
         }
     }
 }
@@ -125,7 +154,7 @@
                 label{
                     font-size: 8px;
                 }
-                input[type="date"]{
+                input[type="text"]{
                     font-size: 10px;
                 }
             }
@@ -167,8 +196,8 @@
                         }
                     }
                     .pdf{
-                        ion-icon{
-                            color: #0b5eff; width: 20px; height: 20px;
+                        img{
+                            height: 20px;
                         }
                     }
                 }
@@ -178,7 +207,7 @@
    
 }
 
-@media only screen and (max-width:359px){
+@media only screen and (max-width:400px){
     .finance_back{ 
         .top_filter{
             padding: 0;
@@ -186,7 +215,7 @@
                 label{
                     font-size: 8px; margin-bottom: 3px;
                 }
-                input[type="date"]{
+                input[type="text"]{
                     font-size: 9px;
                 }
             }
@@ -216,6 +245,9 @@
                     &:last-child{ width: 20%;}
                     .billed{
                         line-height: 20px;
+                        img{
+                            height: 15px;
+                        }
                     }
                     .bill{
                         img{
@@ -228,8 +260,8 @@
                         }
                     }
                     .pdf{
-                        ion-icon{
-                            color: #0b5eff; width: 15px; height: 15px;
+                        img{
+                            height: 15px;
                         }
                     }
                 }

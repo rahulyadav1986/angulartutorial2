@@ -731,7 +731,7 @@ ion-icon{
     }
 }
 
-@media only screen and (max-width:359px){
+@media only screen and (max-width:400px){
     .shop_details_content{ 
         .product_basic_details{
             ion-card{
@@ -949,9 +949,9 @@ ion-icon{
                         }
                         .like_dislike{
                             li{
-                                margin: 0 12px 0 0;     padding: 0 0 0 33px; font-size: 14px;
+                                margin: 0 12px 0 0;     padding: 0 0 0 25px; font-size: 14px;
                                 img{
-                                    height: 25px;
+                                    height: 18px;
                                 }
                             }
 

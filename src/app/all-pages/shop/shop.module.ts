@@ -12,6 +12,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { ShopContentsComponent } from 'src/app/all-components/shop-contents/shop-contents.component';
 import { TopDetailsComponent } from 'src/app/all-components/shop-contents/top-details/top-details.component';
 import { ProductItemsComponent } from 'src/app/all-components/shop-contents/product-items/product-items.component';
+import { SortComponent } from 'src/app/all-components/shop-contents/top-details/sort/sort.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { ProductItemsComponent } from 'src/app/all-components/shop-contents/prod
     SharedModule,
     ShopPageRoutingModule
   ],
-  declarations: [ShopPage, ShopContentsComponent,TopDetailsComponent,ProductItemsComponent, FilterComponent
+  declarations: [ShopPage, ShopContentsComponent,TopDetailsComponent,ProductItemsComponent, FilterComponent, SortComponent
     ,]
 })
 export class ShopPageModule {}

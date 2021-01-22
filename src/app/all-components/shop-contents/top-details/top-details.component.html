@@ -5,9 +5,11 @@
       <img src="assets/images/filter_icon.png" alt="">
       filter
     </li>
-    <li>
+    <li (click)="sort()">
       <img src="assets/images/sort_icon.png" alt="">
-      sort
+      sort      
     </li>
   </ul>
+  <app-sort *ngIf="sortShow"></app-sort>
+  <div class="overlay" *ngIf="sortShow"></div>
 </div>

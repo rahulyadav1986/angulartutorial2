@@ -2,7 +2,7 @@
     width: 100%; background-color: #0b56da; text-align: center; color: #fff; font-size: 22px; padding: 15px 0; box-shadow: inset rgba(0,0,0,.29) 10px 0 18px; text-transform: uppercase;
 }
 .filter_back{
-    width: 100%; padding: 3px 6px;
+    width: 100%; padding: 3px 6px; position: relative;
     ul{
         &.details{
             width: 100%; margin: 0; padding: 18px 0; border: #ddd 1px solid; border-radius: 100px; text-align: center; position: relative;
@@ -16,6 +16,10 @@
             }
         }
     }
+}
+
+.overlay{
+    width: 100%; height: calc(100% - 29px); background-color: rgba(0,0,0,.6); position: fixed; left: 0; z-index: 4;
 }
 
 @media only screen and (max-width:500px){

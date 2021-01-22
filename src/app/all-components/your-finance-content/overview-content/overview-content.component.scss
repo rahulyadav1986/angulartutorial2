@@ -7,8 +7,12 @@
             label{
                 color: #6a6d72; font-size: 14px; text-transform: capitalize; font-weight: normal; margin-bottom: 10px; width: 100%; float: left;
             }
-            input[type="date"]{
-                width: 100%; float: left; background: none; border: none; outline-style: none; text-align: center;
+            input[type="text"]{
+                width: 100%; float: left; background: none; border: none; outline-style: none; text-align: center; font-size: 27px; color: rgba(0,0,0,.9); font-weight: 600;
+                &::placeholder {
+                    color: rgba(0,0,0,.9);
+                    opacity: 1; /* Firefox */
+                  }                  
             }
         }
         .button_back{
@@ -44,14 +48,14 @@
                 label{
                     font-size: 8px;
                 }
-                input[type="date"]{
+                input[type="text"]{
                     font-size: 10px;
                 }
             }
             .button_back{
                 height: 54px; 
                 ion-button{
-                    font-size: 18px; height: 38px;
+                    font-size: 18px; height: 30px; border-radius: 6px;
                 }
             }
         }
@@ -63,7 +67,7 @@
     }
 }
 
-@media only screen and (max-width:359px){
+@media only screen and (max-width:400px){
     .finance_back{ 
         .top_filter{
             padding: 0;
@@ -71,7 +75,7 @@
                 label{
                     font-size: 8px; margin-bottom: 3px;
                 }
-                input[type="date"]{
+                input[type="text"]{
                     font-size: 9px;
                 }
             }

@@ -9,6 +9,8 @@ import { ModalController } from '@ionic/angular';
 })
 export class TopDetailsComponent implements OnInit {
 
+  sortShow:boolean = false;
+
   constructor(public modalController: ModalController) { }
 
   async filter() {
@@ -17,6 +19,10 @@ export class TopDetailsComponent implements OnInit {
       cssClass: 'filter-class'
     });
     return await modal.present();
+  }
+
+  sort(){
+    this.sortShow = !this.sortShow
   }
 
   ngOnInit() {}
